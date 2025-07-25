@@ -37,3 +37,5 @@ weather-forecast-javafx/
 │   └── icons/
 └── README.md
 ## Run Main.java to launch the Weather App GUI.
+
+Project report file also uploaded
