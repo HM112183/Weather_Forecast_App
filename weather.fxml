@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.weatherapp.WeatherController"
+            prefWidth="650" prefHeight="580"
+            styleClass="root">
+
+    <VBox layoutX="30" layoutY="20" spacing="15" alignment="TOP_CENTER" prefWidth="600">
+
+        <!-- Search Section -->
+        <HBox spacing="15" alignment="CENTER">
+        
+		<ToggleButton fx:id="themeToggle" text="Dark Mode" onAction="#toggleTheme"
+              prefWidth="150" prefHeight="40" />
+
+    <ComboBox fx:id="cityComboBox" prefWidth="180" prefHeight="40" editable="true" promptText="Enter city..." />
+
+    <Button text="Add" onAction="#addCityToFavorites" prefWidth="100" />
+    <Button text="Remove" onAction="#removeCityFromFavorites" prefWidth="130" />
+    <Button text="Get Weather" onAction="#getWeather" prefWidth="150" />
+</HBox>
+
+
+        <!-- Weather Info -->
+        <ImageView fx:id="weatherIcon" fitHeight="60" fitWidth="60"/>
+        <Label fx:id="temperatureLabel" styleClass="temperature"/>
+        <Label fx:id="conditionLabel"/>
+        <Label fx:id="humidityLabel"/>
+
+        <!-- Forecast Table -->
+        <TableView fx:id="forecastTable" prefHeight="140" prefWidth="440">
+            <columns>
+                <TableColumn fx:id="dayColumn" text="Day" prefWidth="140"/>
+                <TableColumn fx:id="tempColumn" text="Avg Temp (°C)" prefWidth="140"/>
+                <TableColumn fx:id="conditionColumn" text="Condition" prefWidth="140"/>
+            </columns>
+        </TableView>
+
+        <!-- Temperature Line Chart -->
+        <LineChart fx:id="tempChart" title="5-Day Temperature Trend"
+                   prefHeight="220" prefWidth="440"
+                   animated="true" createSymbols="true" legendVisible="false">
+            <xAxis>
+                <CategoryAxis label="Day"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Temp (°C)"/>
+            </yAxis>
+        </LineChart>
+
+    </VBox>
+</AnchorPane>

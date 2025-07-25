@@ -1,0 +1,56 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.glass-card {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+    -fx-background-radius: 20;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 20, 0, 0, 4);
+    -fx-border-radius: 20;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-width: 1.5;
+}
+
+.heading {
+    -fx-font-size: 22px;
+    -fx-text-fill: #004d40;
+    -fx-font-weight: bold;
+}
+
+.input {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #00796b;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+    -fx-pref-width: 220;
+}
+
+.button {
+    -fx-background-color: #00796b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20;
+    -fx-background-radius: 10;
+}
+
+.button:hover {
+    -fx-background-color: #004d40;
+}
+
+.temperature {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff6f00;
+}
+
+.table-view {
+    -fx-background-color: rgba(255,255,255,0.85);
+    -fx-border-radius: 10;
+    -fx-padding: 5;
+    -fx-font-size: 13px;
+    -fx-border-color: #00796b;
+}
