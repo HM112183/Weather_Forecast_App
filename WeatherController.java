@@ -30,7 +30,7 @@ public class WeatherController {
 
     @FXML private ToggleButton themeToggle;
 
-    private final String API_KEY = "ab216312a84da3b6a35789ce06b0ec68"; // Replace with your OpenWeatherMap API key
+    private final String API_KEY = "Replace with your OpenWeatherMap API key";
     private final ObservableList<String> favoriteCities = FXCollections.observableArrayList("Mumbai", "Delhi", "Bangalore", "Ahmedabad");
 
     @FXML
