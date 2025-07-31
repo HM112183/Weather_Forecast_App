@@ -12,7 +12,7 @@ import com.google.gson.JsonParser;
 
 
 public class ApiService {
-    private static final String API_KEY = "ab216312a84da3b6a35789ce06b0ec68"; // Replace with your key
+    private static final String API_KEY = "Replace with your key";
 
     public static WeatherData getWeather(String city) {
         try {
